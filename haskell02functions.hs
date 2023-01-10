@@ -10,6 +10,8 @@ hasFever' :: [Float] -> [Float]
 hasFever filter (\x -> x > 37.8)
 
 -- Atividade 3
+itemize :: [String] -> [String]
+itemize map (\x -> "<li>" ++ x ++ "</li>")
 
 -- Atividade 4
 big :: Float -> Float -> Bool
@@ -26,8 +28,17 @@ quarentine :: [(String,Float)] -> [(String,Float)]
 quarentine x = filter fever2 x
 
 -- Atividade 6
+agesIn :: [Int] -> Int -> [Int]
+agesIn map (\x y -> y-x)
 
 -- Atividade 7
+super :: String -> String
+super x 
+    | head x == 'A' = "Super" ++ x
+    | otherwise = x
+
+superNames :: [String] -> [String]
+superNames x = map super x
 
 -- Atividade 8
 isShortWord :: String -> Bool
