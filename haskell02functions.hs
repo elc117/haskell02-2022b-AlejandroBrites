@@ -33,7 +33,9 @@ agesIn map (\x y -> y - x)
 
 -- Atividade 7
 super :: String -> String
-super x | head x == 'A' = "Super" ++ x | otherwise = x
+super x 
+  | head x == 'A' = "Super" ++ x 
+  | otherwise = x
 
 superNames :: [String] -> [String]
 superNames x = map super x
