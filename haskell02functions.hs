@@ -29,7 +29,7 @@ quarentine x = filter fever2 x
 
 -- Atividade 6
 agesIn :: [Int] -> Int -> [Int]
-agesIn x y = map (\x y -> y - x) x
+agesIn x y = map (\x -> y - x) x
 
 -- Atividade 7
 super :: String -> String
