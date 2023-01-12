@@ -15,10 +15,10 @@ itemize map (\x -> "<li>" ++ x ++ "</li>") x
 
 -- Atividade 4
 big :: Float -> Float -> Bool
-big x y = y*y*pi < x
+big x y = y*y*pi > x
 
 bigCircles :: Float -> [Float] -> [Float]
-bigCircles x y = filter big x y
+bigCircles x y = filter (big x) y
 
 -- Atividade 5
 fever2 :: [(String,Float)] -> Bool
@@ -29,7 +29,7 @@ quarentine x = filter fever2 x
 
 -- Atividade 6
 agesIn :: [Int] -> Int -> [Int]
-agesIn map (\x y -> y - x)
+agesIn x y = map (\x y -> y - x) x
 
 -- Atividade 7
 super :: String -> String
