@@ -7,11 +7,11 @@ hasFever x = filter fever x
 
 -- Atividade 2
 hasFever' :: [Float] -> [Float]
-hasFever' filter (\x -> x > 37.8)
+hasFever' filter (\x -> x > 37.8) x
 
 -- Atividade 3
 itemize :: [String] -> [String]
-itemize map (\x -> "<li>" ++ x ++ "</li>")
+itemize map (\x -> "<li>" ++ x ++ "</li>") x
 
 -- Atividade 4
 big :: Float -> Float -> Bool
